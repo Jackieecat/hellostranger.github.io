@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <title>留言板</title>
+    <script type="text/javascript" src="index.js"></script>
+    <style>
+body {
+  background-image: url('5E8A9157.JPG ');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+  </head>
+  <body>
+    <h1 style="color:Tomato;"><b>电话亭里的赛博电话📕</b></h1>
+    <p style="color:DodgerBlue;"><small>亲爱的陌生人你好，我是住在电话亭里的人。很高兴认识你，你可以和我聊聊天吗👇</small></p>
+    <p style="color:Darkgrey;"><small>ps:每一条留言都很珍贵，不要随便清空哦🥺</small></p>
+    <textarea id="dome" cols="70" rows="5"></textarea>
+    <br />
+    <input type="button" value="发布" onclick="saveStorage ('dome');" />
+    <input type="button" value="查看历史留言" onclick="loadStorage ('msg');" />
+    <input type="button" value="清空留言" onclick="clearStorage ('msg');">
+    <hr />
+    <p id="msg"></p>
+  </body>
+</html>
